@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		div{
+  			padding: 15px;
+  			text-align: center;
+		}
+		img{
+  			text-align: center;
+  			border: 1px solid #777;
+  			width: 180px;
+  			height: 180px;
+		}
+	</style>
+	<title>Gallery</title>
+</head>
+<body>
+<div>
+<h1>Gallery</h1>
+<img src="" id="imagem">
+<p>
+	<a href="#" id="flower1">Picture 1</a>
+	<a href="#" id="flower2">Picture 2</a>
+	<a href="#" id="flower3">Picture 3</a>
+	<a href="#" id="flower4">Picture 4</a>
+	<a href="#" id="flower5">Picture 5</a>
+</p>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a").click(function(){
+			$("#imagem").attr("src","images/" + this.id + ".jpg");
+		});
+	});
+
+</script>
+
+
+
+
+
+</body>
+</html>
